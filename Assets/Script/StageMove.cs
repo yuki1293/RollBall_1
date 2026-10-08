@@ -42,7 +42,7 @@ public class StageMove : MonoBehaviour
         float verticalInput = _playerInput.ReadValue<Vector2>().y;
 
         //　オブジェクトを回転させる
-        _stage.transform.Rotate(horizontalInput, 0f, verticalInput);
+        _stage.transform.Rotate(horizontalInput * 0.5f, 0f, verticalInput * 0.5f);
 
     }
 }
